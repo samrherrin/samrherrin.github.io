@@ -20,7 +20,6 @@
       margin-top: 0;
     }
 
-    /* Darker, academic-style link color */
     a {
       color: #003399;
       text-decoration: none;
@@ -29,32 +28,53 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .photo {
+      flex-shrink: 0;
+    }
+
+    .photo img {
+      width: 130px;
+      border-radius: 4px;
+    }
+
+    .text {
+      flex: 1;
+    }
   </style>
 </head>
 
 <body>
 
-<section style="overflow:auto;">
+<section class="header">
 
-  <img src="headshot.png"
-       style="width:180px; float:left; margin-right:25px; border-radius:4px;">
+  <div class="photo">
+    <img src="headshot.png" alt="">
+  </div>
 
-  <h1>Sam Herrin</h1>
+  <div class="text">
+    <h1>Sam Herrin</h1>
 
-  <p style="margin-bottom:22px;">
-    I am a PhD student in the Department of Economics at Florida State University.
-    My research interests are law & economics, crime, and education.
-    I did my undergrad in economics at Georgia College.
-    Here is my <a href="https://www.google.com">CV</a>.
-  </p>
+    <p>
+      I am a PhD student in the Department of Economics at Florida State University.
+      My research interests are law & economics, crime, and education.
+      I did my undergrad in economics at Georgia College.
+      Here is my <a href="https://www.google.com">CV</a>.
+    </p>
 
-  <p style="clear:left;">
-    Email:
-    <a href="mailto:srh24d@fsu.edu">srh24d@fsu.edu</a>
-  </p>
+    <p>
+      Email:
+      <a href="mailto:srh24d@fsu.edu">srh24d@fsu.edu</a>
+    </p>
+  </div>
 
 </section>
 
 </body>
-</html>
 </html>
